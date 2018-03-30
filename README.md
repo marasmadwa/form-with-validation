@@ -14,3 +14,5 @@ after installation, start app by typing commands below:
 `./node_modules/.bin/webpack`
 
 Now everything should be ready to go! :)
+
+## This project isn't ready yet !
