@@ -17,7 +17,7 @@ Now everything should be ready to go! :)
 
 ## Sources:
 
-image downloaded from : (https://pixabay.com/)
+image downloaded from : https://pixabay.com/
 
 ## This project isn't ready yet !
 
