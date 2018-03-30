@@ -1,0 +1,39 @@
+{
+  "name": "form-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --inline --hot"
+  },
+  "author": "marasmadwa",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "css-loader": "^0.28.9",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.20.1",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marasmadwa/form-with-validation.git"
+  },
+  "bugs": {
+    "url": "https://github.com/marasmadwa/form-with-validation/issues"
+  },
+  "homepage": "https://github.com/marasmadwa/form-with-validation#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-sass": "^3.2.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-util": "^3.0.8"
+  }
+}
