@@ -15,4 +15,9 @@ after installation, start app by typing commands below:
 
 Now everything should be ready to go! :)
 
+## Sources:
+
+image downloaded from : (https://pixabay.com/)
+
 ## This project isn't ready yet !
+
