@@ -1,0 +1,12 @@
+body{
+  background-image: url("../images/circles.jpg");
+  font-family: 'Roboto', sans-serif;
+}
+.container{
+  width: 1350px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
