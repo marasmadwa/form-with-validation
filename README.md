@@ -9,7 +9,7 @@ Run console and install dependencies by typing command below:
 
 `npm install`
 
-after installation, start app by typing commands below:
+after installation, start app by typing command below:
 
 `./node_modules/.bin/webpack`
 
