@@ -1,5 +1,5 @@
 
-.form{
+.form {
   color: #7d7d7d;
   display: flex;
   justify-content: space-between;
@@ -8,12 +8,12 @@
   background-color: #f9f9f9;
   width: 626px;
   height: 487px;
-  .profile{
+  .profile {
     width: 100%;
     height: 90px;
     background-color: #0094bb;
     position: relative;
-    .profilePicture{
+    .profilePicture {
       position: absolute;
       top: -20px;
       left: 50px;
@@ -27,18 +27,39 @@
       background-size: 195px 145px;
     }
   }
-  .formGroup{
+  .formGroup {
     margin-top: 30px;
+    label{
+      position: relative;
+    }
+    input {
+      margin-top: 12px;
+      padding-left: 16px;
+      width: 526px;
+      height: 43px;
+      border-radius: 5px;
+      border: 1px solid #7d7d7d;
+    }
+    .requiredField{
+      position:absolute;
+      top:12px;
+      right:20.5px;
+      width: 0;
+      height: 0;
+      color: #f9f9f9;
+      //border-radius: 0 0 0px 0px;
+      border-top: 40px solid #0094bb;
+      border-bottom: 30px solid transparent;
+      border-right: 30px solid transparent;
+      transform: rotate(90deg);
+      span{
+        position: absolute;
+        top:-35px;
+        right:-15px;
+      }
+    }
   }
-  input{
-    margin-top: 12px;
-    padding-left: 16px;
-    width: 526px;
-    height: 43px;
-    border-radius: 5px;
-    border: 1px solid #7d7d7d;
-  }
-  .checkboxLabel{
+  .checkboxLabel {
     text-align: center;
     margin-top: 30px;
     width: 544px;
@@ -59,14 +80,14 @@
     display: none;
     visibility: hidden;
   }
-  .checkboxLabel [type="checkbox"]:checked + span{
+  .checkboxLabel [type="checkbox"]:checked + span {
     background-image: url("../images/form_ok.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 
   }
-  .passwordReminder:before{
+  .passwordReminder:before {
     content: '';
     height: 1px;
     width: 100%;
@@ -75,7 +96,7 @@
     top: -3px;
     left: 0;
   }
-  .passwordReminder{
+  .passwordReminder {
     position: relative;
     width: 100%;
     height: 100px;
@@ -84,13 +105,13 @@
     justify-content: flex-end;
     align-items: center;
     flex-direction: row;
-    .passwordLink{
+    .passwordLink {
       text-decoration: none;
       color: #0094bb;
       font-weight: bold;
       margin-right: 15px;
     }
-    button{
+    button {
       margin-right: 46px;
       width: 110px;
       height: 50px;
