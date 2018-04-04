@@ -7,15 +7,20 @@ document.addEventListener("DOMContentLoaded", function () {
     let labelEmailInput = labelRequire.previousElementSibling;
     let loginBtn = document.querySelector('button');
     let passwordLink = document.querySelector('a');
-    console.log(passwordLink);
+    let form = document.querySelector('form');
+    let resetBtn = document.querySelector('.resetBtn');
+    let cancelBtn = document.querySelector('.cancelBtn');
+
+
+
 
     loginBtn.addEventListener('click', function(){
         if (labelEmailInput.innerHTML.indexOf('@') < 0) {
-            labelEmailInput.style.border = '1px solid red';
-            labelError.style.color = 'red';
+            labelEmailInput.style.border = '1px solid #cc0849';
+            labelError.style.color = '#cc0849';
             labelError.innerHTML = 'Invalid email adress'
         }else {
-            labelEmailInput.innerHTML = ''
+            labellabelError.innerHTML = ''
         }
     });
 
@@ -26,7 +31,17 @@ document.addEventListener("DOMContentLoaded", function () {
     popup = () => {
         let popup = document.querySelector('.popup');
         popup.style.visibility = 'visible';
-    }
+        form.style.visibility = 'hidden';
+    };
 
+
+    resetBtn.addEventListener('click', function(event){
+       event.preventDefault();
+    });
+
+    cancelBtn.addEventListener("click", function(){
+        popup.style.visibility = 'hidden';
+        form.style.visibility = 'visible';
+    });
 
 });

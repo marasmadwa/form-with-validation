@@ -1,6 +1,26 @@
-.popup{
-  width: 100px;
-  height: 100px;
-  background-color: #0094bb;
+.popup {
   visibility: hidden;
+  position: absolute;
+  form {
+    height: 406px;
+    p {
+      margin-bottom: 30px;
+    }
+    input {
+      margin-bottom: 34px;
+    }
+  }
+  .resetBtn {
+    width: 173px;
+  }
+  .cancelBtn {
+    border: 1px solid #cc0849;
+    color: #cc0849;
+    margin-left: 44px;
+  }
+  .passwordReminder {
+    justify-content: space-between;
+  }
 }
+
+

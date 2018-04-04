@@ -79,15 +79,17 @@ document.addEventListener("DOMContentLoaded", function () {
     var labelEmailInput = labelRequire.previousElementSibling;
     var loginBtn = document.querySelector('button');
     var passwordLink = document.querySelector('a');
-    console.log(passwordLink);
+    var form = document.querySelector('form');
+    var resetBtn = document.querySelector('.resetBtn');
+    var cancelBtn = document.querySelector('.cancelBtn');
 
     loginBtn.addEventListener('click', function () {
         if (labelEmailInput.innerHTML.indexOf('@') < 0) {
-            labelEmailInput.style.border = '1px solid red';
-            labelError.style.color = 'red';
+            labelEmailInput.style.border = '1px solid #cc0849';
+            labelError.style.color = '#cc0849';
             labelError.innerHTML = 'Invalid email adress';
         } else {
-            labelEmailInput.innerHTML = '';
+            labellabelError.innerHTML = '';
         }
     });
 
@@ -98,7 +100,17 @@ document.addEventListener("DOMContentLoaded", function () {
     popup = function popup() {
         var popup = document.querySelector('.popup');
         popup.style.visibility = 'visible';
+        form.style.visibility = 'hidden';
     };
+
+    resetBtn.addEventListener('click', function (event) {
+        event.preventDefault();
+    });
+
+    cancelBtn.addEventListener("click", function () {
+        popup.style.visibility = 'hidden';
+        form.style.visibility = 'visible';
+    });
 });
 
 /***/ })
