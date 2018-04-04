@@ -20,5 +20,6 @@ Now everything should be ready to go! :)
 
 image downloaded from : https://pixabay.com/
 
-## This project isn't ready yet !
+### Project preview:
+![alt text](https://github.com/marasmadwa/form-with-validation/blob/master/images/formWithValidation.png)
 
