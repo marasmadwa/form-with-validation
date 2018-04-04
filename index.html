@@ -13,15 +13,22 @@
             <div class="profilePicture"></div>
         </div>
         <div class="formGroup">
-            <label>EMAIL ADDRESS<br>
+            <label class="labelEmail">EMAIL ADDRESS<br>
                 <input type="email" name="email" placeholder="ENTER YOUR EMAIL ADRESS">
-                <div class="requiredField"><span>*</span></div>
+                <div class="requiredField"><span>*</span>
+                    <div class="requiredInfo">required<span class="requiredArrow"></span></div>
+                </div>
+                <small class="error"></small>
             </label>
         </div>
         <div class="formGroup">
-            <label>PASSWORD<br>
+            <label class="labelPassword">PASSWORD<br>
                 <input type="password" name="password" placeholder="ENTER YOUR PASSWORD">
-                <div class="requiredField"><span>*</span></div>
+                <div class="requiredField"><span>*</span>
+                    <div class="requiredInfo">required<span class="requiredArrow"></span></div>
+                </div>
+
+
             </label>
         </div>
         <label class="checkboxLabel">
@@ -30,10 +37,14 @@
             <span></span>
         </label>
         <div class="passwordReminder">
-            <a href="" class="passwordLink">Forgotten password?</a>
+            <a href="" class="passwordLink" onclick="popup()">Forgotten password?</a>
             <button>LOGIN</button>
         </div>
     </form>
+
+    <div class="popup">
+
+    </div>
 
 </div>
 

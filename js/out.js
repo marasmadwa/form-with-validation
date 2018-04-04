@@ -72,7 +72,33 @@
 
 document.addEventListener("DOMContentLoaded", function () {
 
-    console.log('DOMContentLoaded !');
+    // console.log('DOMContentLoaded !')
+
+    var labelError = document.querySelector('.error');
+    var labelRequire = labelError.previousElementSibling;
+    var labelEmailInput = labelRequire.previousElementSibling;
+    var loginBtn = document.querySelector('button');
+    var passwordLink = document.querySelector('a');
+    console.log(passwordLink);
+
+    loginBtn.addEventListener('click', function () {
+        if (labelEmailInput.innerHTML.indexOf('@') < 0) {
+            labelEmailInput.style.border = '1px solid red';
+            labelError.style.color = 'red';
+            labelError.innerHTML = 'Invalid email adress';
+        } else {
+            labelEmailInput.innerHTML = '';
+        }
+    });
+
+    passwordLink.addEventListener("click", function (event) {
+        event.preventDefault();
+    });
+
+    popup = function popup() {
+        var popup = document.querySelector('.popup');
+        popup.style.visibility = 'visible';
+    };
 });
 
 /***/ })
