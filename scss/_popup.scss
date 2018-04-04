@@ -9,6 +9,17 @@
     input {
       margin-bottom: 34px;
     }
+    #resetText{
+      position: absolute;
+      top: -50%;
+      left: 35%;
+      text-align: center;
+      color: #f9f9f9;
+      font-weight: bold;
+      font-size: 180%;
+      letter-spacing: 3px;
+      line-height: 90px;
+    }
   }
   .resetBtn {
     width: 173px;
