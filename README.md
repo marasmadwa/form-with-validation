@@ -5,6 +5,7 @@ Simple website which include form with email and password validation.
 ## Getting Started
 
 Installation:
+
 Run console and install dependencies by typing command below:
 
 `npm install`
