@@ -46,7 +46,7 @@ form {
       outline: none;
     }
     .requiredField {
-      position: absolute !important;
+      position: absolute;
       top: 12px;
       right: 20.5px;
       width: 0;
@@ -171,8 +171,4 @@ form {
       background-color: #0094bb;
     }
   }
-}
-
-.test{
-  position: relative;
 }
