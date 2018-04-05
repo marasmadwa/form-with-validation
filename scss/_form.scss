@@ -34,6 +34,7 @@ form {
     label {
       position: relative;
       width: 100%;
+      box-sizing: border-box
     }
     input {
       margin-top: 12px;
@@ -45,7 +46,7 @@ form {
       outline: none;
     }
     .requiredField {
-      position: absolute;
+      position: absolute !important;
       top: 12px;
       right: 20.5px;
       width: 0;
@@ -170,4 +171,8 @@ form {
       background-color: #0094bb;
     }
   }
+}
+
+.test{
+  position: relative;
 }

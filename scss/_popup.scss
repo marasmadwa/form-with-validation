@@ -10,7 +10,7 @@
       margin-bottom: 34px;
     }
     #resetText{
-      position: absolute;
+      position: absolute!important;
       top: -50%;
       left: 35%;
       text-align: center;
@@ -19,6 +19,11 @@
       font-size: 180%;
       letter-spacing: 3px;
       line-height: 90px;
+    }
+    .popupError {
+      position: absolute;
+      bottom: -50%;
+      right: 0;
     }
   }
   .resetBtn {

@@ -82,6 +82,9 @@ document.addEventListener("DOMContentLoaded", function () {
     var form = document.querySelector('form');
     var resetBtn = document.querySelector('.resetBtn');
     var cancelBtn = document.querySelector('.cancelBtn');
+    var popupInput = document.querySelector('#popupEmail');
+    var popupError = document.querySelector('.popupError');
+    console.log(popupInput);
 
     loginBtn.addEventListener('click', function () {
         if (labelEmailInput.innerHTML.indexOf('@') < 0) {
@@ -89,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
             labelError.style.color = '#cc0849';
             labelError.innerHTML = 'Invalid email adress';
         } else {
-            labellabelError.innerHTML = '';
+            labelError.innerHTML = '';
         }
     });
 
@@ -103,13 +106,21 @@ document.addEventListener("DOMContentLoaded", function () {
         form.style.visibility = 'hidden';
     };
 
-    resetBtn.addEventListener('click', function (event) {
-        event.preventDefault();
+    resetBtn.addEventListener('click', function () {
+        if (popupInput.innerHTML.indexOf('@') < 0) {
+            popupInput.style.border = '1px solid #cc0849';
+            popupError.style.color = '#cc0849';
+            popupError.innerHTML = 'Invalid email adress';
+        } else {
+            popupError.innerHTML = '';
+        }
     });
 
     cancelBtn.addEventListener("click", function () {
+        var popup = document.querySelector('.popup');
         popup.style.visibility = 'hidden';
         form.style.visibility = 'visible';
+        popupInput.innerHTML = '';
     });
 });
 

@@ -12,6 +12,14 @@
       height: 487px;
     }
   }
+  .popup form{
+    height: auto;
+    #resetText{
+      text-align: center;
+      margin-left: 3%;
+      top: -25%;
+    }
+  }
 }
 
 @media (max-width: 620px) {
@@ -37,6 +45,18 @@
         right: 20.8px;
       }
     }
+  }
+  .popup form{
+    height: auto;
+    #resetText{
+      font-size: 20px;
+      line-height: 65px;
+      margin-left: 5%;
+      top: -25%;
+    }
+  }
+  .popup form .profile{
+    height: 65px;
   }
 }
 
@@ -90,6 +110,7 @@
       line-height: 60px;
       text-align: center;
       margin-left: 5%;
+      top: -50%;
     }
   }
   .popup form .profile{
