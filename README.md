@@ -14,7 +14,7 @@ after installation, start app by typing command below:
 
 `./node_modules/.bin/webpack`
 
-Now everything should be ready to go! :)
+Now open `index.html` from main directory.
 
 ## Sources:
 
